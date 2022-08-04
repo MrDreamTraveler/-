@@ -38,6 +38,7 @@ $('.layui-form').submit(function (e) {
       const { status, message } = res
       if (status !== 0) return layer.msg(message)
       // 调用父页面渲染函数
+      layer.msg('更新用户信息成功！')
       window.parent.getUserInfo()
     },
   })
