@@ -8,8 +8,8 @@ $.ajaxPrefilter((option) => {
       Authorization: localStorage.getItem('token'),
     }
   }
-  // 在发起真正的 Ajax 请求之前，统一拼接请求的根路径
-  option.url = `http://www.liulongbin.top:3007` + option.url
+  // 在发起真正的 Ajax 请求之前，统一拼接请求的根路径  http://big-event-api-t.itheima.net
+  option.url = `http://big-event-api-t.itheima.net` + option.url
 
   // 不论成功还是失败，最终都会调用 complete 回调函数
   option.complete = (res) => {
