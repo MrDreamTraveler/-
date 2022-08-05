@@ -99,7 +99,7 @@ const publishArticle = (fd) => {
       const { status, message } = res
       layer.msg(message)
       if (status !== 0) return
-      // location.href='/article_list.html'
+      location.href = '/art_list.html'
     },
   })
 }
